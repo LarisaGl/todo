@@ -46,7 +46,7 @@ catch(PDOException $e)
     <td><?php if($row['is_done'] == 0) {echo "В работе";} else {echo "Выполнено";}?></td>
     <td><?php echo $row['date_added']?></td>
     <td>
-      <a href="#">Изменить</a>
+      <a href="change.php?change=<?=$row['id']?>">Изменить</a>
       <a href="action.php?id=<?=$row['id']?>">Выполнить</a>
       <a href="action.php?delete=<?=$row['id']?>">Удалить</a>
     </td>
